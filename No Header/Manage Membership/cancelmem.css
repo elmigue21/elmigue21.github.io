@@ -1,0 +1,95 @@
+body {
+  background: black; 
+  background-image: url("../../Images/Background/dog.png"), url("../../Images/Background/cat.png");
+  background-position-x: 965px, 5px;
+  background-position-y: -50px, 0px;
+  background-repeat: no-repeat;
+}
+
+* {
+  text-decoration: none;
+}
+
+.logo {
+    transform: translate(760px,800px);
+    height: 20%; 
+    width: 20%;
+}
+
+.sad {
+  height: 40%; 
+  width: 50%;
+}
+
+.square {
+
+    border-radius: 25px;
+    background-color: rgba(21, 21, 21, 0.75);
+    width: 440px;
+    height: 500px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 70px;
+    text-align: center;
+    
+}
+
+.button {
+
+  margin-top: 50px;
+  margin-left: auto;;
+  margin-right: auto;
+  border-radius: 15px;
+  background-color: #0098D9;
+  width: 280px;
+  height: 70px;
+
+  
+}
+
+.p3 {
+
+  text-align: center;
+  font-family: NTR;
+  font-size: 16px;
+  color: white;
+
+}
+
+.p2 {
+  padding-top: 15px;
+  font-family: Play;
+  font-size: 25px;
+
+}
+
+.p1 {
+
+  padding-top: 30px;
+  font-family: Play;
+  color: white;
+  font-size: 40px;
+
+}
+
+#back a:link, a:visited {
+  margin-top: 50px;
+  margin-left: 95px;
+  background-color: #0098D9;
+  border-radius: 15px;
+  width: 250px;
+  height: 60px;
+  color: black;
+  text-decoration: none;
+  display: block;
+
+
+}
+
+#back a:hover {
+  background-color: #28A4D9;
+}
+
+#cancel a:hover {
+  color: whitesmoke;
+}

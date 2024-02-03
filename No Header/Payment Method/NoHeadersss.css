@@ -1,0 +1,210 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  
+  }  
+
+  * {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+  }
+  
+  body {
+    background: #202020;
+    background-image: url(../../Images/Background/Payment\ Method\ BG.png);
+    color: white;
+    width: 1900px;
+    margin: 0;
+    font-family: 'NTR';
+  }
+  
+  main {
+    height: 100%;
+    margin-right: 1000px;
+    width:800px;
+    margin:0;
+    background: #151515;
+    align-items: center;
+  }
+  
+  #logo {
+    width: 220px;
+    height: 50px;
+    padding: 0.4rem;
+    margin-top:10px;
+  }
+
+  form {
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 0.5em;
+    padding-top: 3em;
+  }
+
+  fieldset {
+    border: none;
+    margin-top: -30px;
+    padding: 3rem 0;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .container .payment {
+    margin:0;
+    padding: 0;
+    position: relative;
+    background: grey;
+    height: 60px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+  }
+  .container .payment li {
+    list-style-type: none;
+    display: inline-block;
+  }
+  .container .payment li a {
+    background-size: cover;
+    height: 60px;
+    position: relative;
+    padding: 12px 107.5px 12px  62.5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    border: 3px solid #151515;
+  }
+
+  .container .payment li #paypal {
+    background-image: url(../../Images/Payment\ Card/Paypal1.png);
+  }
+  .container .payment li #mastercard {
+    background-image: url(../../Images/Payment\ Card/Mastercard.png);
+  }
+  .container .payment li #visa {
+    background-image: url(../../Images/Payment\ Card/Visa.png);
+  }
+  .container .payment li #gcash {
+    background-image: url(../../Images/Payment\ Card/Gcash.png);
+  }
+
+  .container .payment li a:hover,
+  .container .payment li.active a {
+    background: white;
+  }
+
+  #card, #address {
+    width: 100%;
+    border:none;
+    background: #151515;
+    margin: 0 0 10px 0;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    transition: .2s;
+  }
+
+  #first, #last, #date, #code, #country, #phone {
+    width: 48.5%;
+    border:none;
+    background: #151515;
+    padding-left:2px;
+    margin: 0 0 10px 2.5px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    transition: .2s;
+  }
+
+  #last-label{
+    margin: 0 0 0 222px;
+  }
+  #code-label {
+    margin: 0 0 0 237px;
+  }
+  #phone-label {
+    margin: 0 0 0 256px;
+  }
+
+  #last-label, #first-label, #card-label, #address-label, #date-label, #code-label, #country-label, #phone-label {
+    font-size: 30px;
+    line-height: 5px;
+  }
+
+  #card:active,
+  #card:focus,
+  #card:hover,
+  #first:active,
+  #first:focus,
+  #first:hover,
+  #last:active,
+  #last:focus,
+  #last:hover,
+  #address:active,
+  #address:focus,
+  #address:hover,
+  #date:active,
+  #date:focus,
+  #date:hover,
+  #code:active,
+  #code:focus,
+  #code:hover,
+  #country:active,
+  #country:focus,
+  #country:hover,
+  #phone:active,
+  #phone:focus,
+  #phone:hover {
+	outline: none;
+	border-color:#0098D9;
+    transition: .2s;
+  } 
+
+  .next {
+    margin-bottom: -20px;
+    margin-left: 540px;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: #0098D9;
+    color:#151515;
+    border:none;
+  }
+
+  .next:hover {
+    background:linear-gradient(to right, #0098d9 0%, #000066 100%);
+    cursor: pointer;
+    transition: all .5s ease;
+  }
+
+  .cancel {
+    text-align: right;
+    margin-bottom: 30px;
+    margin-right: 60px;
+  }
+
+  .cancel a {
+    color: white;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

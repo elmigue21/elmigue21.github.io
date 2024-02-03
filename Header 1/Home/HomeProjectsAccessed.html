@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start; /* Optional: Align items as per your design */
+            max-width: 1900px; /* Adjust the max-width based on your design */
+        }
+
+        h2, h3 {
+            font-size: 30px;
+        }
+
+        .item {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            background-color: gray;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+            .item a {
+                text-decoration: none;
+                color: inherit;
+            }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Membership" />
+    <title>Your Projects</title>
+    <link rel="stylesheet" href="HomeAccessed.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../Fabicon/apple-touch-icon.png">
+    <link rel="icon" type="soundfx/png" sizes="32x32" href="../../Fabicon/favicon-32x32.png">
+    <link rel="manifest" href="../../Fabicon/site.webmanifest">
+    <link rel="mask-icon" href="../../Fabicon/safari-pinned-tab.svg" color="#4a4a4a">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#151515">
+</head>
+<body>
+    <!--This is the Accessed header-->
+    <header>
+        <a href="../Home/HomeAccessed.html"><img id="logo" src="../../Images/LOGO used/LIKAGI-FULL-LOGO.png"></a>
+        <div class="search-container">
+            <input type="text" name="search" placeholder="Search..." class="search-input">
+            <a href="#" class="search-btn">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Home/HomeAccessed.html"><b>Home</b></a></li>
+                <p style="color: white; padding-top: 3px;">|</p>
+                <li><a href="CommunityAccessed.html"><b>Community</b></a></li>
+                <p style="color: white; padding-top: 3px;">|</p>
+                <li><a href="../Help/HelpAccessed.html"><b>Help</b></a></li>
+                <li><i class="fas fa-bell" style="color: white;margin-top:10px;"></i></li>
+                <img id="profilepic" src="../../Images/Profile/Faker Profile.jpg" height="40px" width="40px" style="border: 1px solid #0098D9;border-radius: 100px; margin:0 10px 0 2px;float:left;">
+                <div class="important">
+                    <span><b style="font-size: 20px;margin-left:-15px;margin-right: -5px;">&nbsp;&nbsp;Faker</b></span>
+                    <div class="important-content">
+                        <a href="../Profile/ProfileAccessed.html"><b style="font-size: 25px;">Profile</b></a>
+                        <p style="color: white; margin-left: 15px; margin-top: -8px;font-family: sans-serif;">________________________</p>
+                        <a href="../Account Settings/AccountSettingsAccessed.html">Account Settings</a>
+                        <a href="#">Manage Accounts</a>
+                        <a href="../../Header 2/PrivacyPolicyAccessed.html">Privacy Policy</a>
+                        <a href="../HomePage/HomePageAccessed.html">Log out</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!--This is the side nav bar-->
+    <div class="sidebar">
+        <img id="profilepic" src="../../Images/Profile/Faker Profile.jpg" width="150px" height="150px" style="border: 2px solid #0098D9;border-radius: 100px; display: block;margin-left: 40px;margin-right: 40px; margin-top: 15px;">
+        <div class="sidebarprofile" style="text-align:center;">
+            <a href="../Profile/ProfileAccessed.html"><b style="font-size: 30px; color:white; margin-right:15px;">&nbsp;Faker</b></a>
+            <p style="font-size: 14px; margin-top: -15px; margin-bottom: -15px; margin-right: 10px;">100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.5k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;149</p>
+            <p style="font-size: 12px; margin-top: -15px;">Posts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Followers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Following</p>
+        </div>
+        <div class="sidenavmenu">
+            <a href="../../No Header/Manage Membership/managemembership.html" class="active">
+                <span><b>Likagi Member</b></span>
+            </a>
+            <a href="HomeAccessed.html">
+                <span>Home</span>
+            </a>
+            <a href="HomeProjectsAccessed.html">
+                <span>Your Projects</span>
+            </a>
+            <a href="HomeSharedAccessed.html">
+                <span>Shared With You</span>
+            </a>
+            <a href="HomeAssetsAccessed.html">
+                <span>Your Assets</span>
+            </a>
+            <a href="HomeCoursesAccessed.html">
+                <span>Courses Taking</span>
+            </a>
+        </div>
+    </div>
+    <div style="margin-left: 275px; margin-top: -900px;z-index: 0;">
+        <h2>Your Projects</h2>
+        <div class="container" onclick="window.location.href='https://drive.google.com';">
+            <div class="item"><i class="fa-solid fa-file" style="font-size:50px; "></i></div>
+            <div class="item"><i class="fa-solid fa-file" style="font-size:50px; "></i></div>
+            <div class="item"><i class="fa-solid fa-file" style="font-size:50px; "></i></div>
+            <div class="item"><i class="fa-solid fa-file" style="font-size:50px; "></i></div>
+            <div class="item"><i class="fa-solid fa-file" style="font-size:50px; "></i></div>
+            <div class="item"><i class="fa-solid fa-file" style="font-size:50px; "></i></div>
+            <div class="item"><i class="fa-solid fa-file" style="font-size:50px; "></i></div>
+            <div class="item"><i class="fa-solid fa-file" style="font-size:50px; "></i></div>
+            <div class="item"><i class="fa-solid fa-file" style="font-size:50px; "></i></div>
+            <div class="item"><i class="fa-solid fa-file" style="font-size:50px; "></i></div>
+            <div class="item"><i class="fa-solid fa-file" style="font-size:50px; "></i></div>
+            <div class="item"><i class="fa-solid fa-file" style="font-size:50px; "></i></div>
+        </div>
+    </div>
+
+
+</body>
+<footer>
+</footer>
+</html>

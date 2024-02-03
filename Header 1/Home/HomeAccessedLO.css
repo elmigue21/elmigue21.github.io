@@ -1,0 +1,168 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+
+}
+
+* {
+  text-decoration: none;
+}
+
+li b {
+    color: white;
+}
+
+#logo {
+    width: 220px;
+    height: 50px;
+    padding: 0.4rem;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    /*margin-left: 100px;*/
+    /*margin-top:20px;*/
+}
+
+body {
+  background: #202020;
+  color: white;
+  font-family: 'NTR';
+  margin: 0;
+  width: 1900px;
+  min-height: 1800px;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y:scroll;
+
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+} 
+
+header {
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #151515;
+  display: flex;
+  position: fixed;
+  font-family: 'NTR';
+  top: 0;
+  z-index: 1;
+}
+
+input {
+  color: white;
+}
+
+.search-container {
+    background: #151515;
+    height: 30px;
+    border-radius: 30px;
+    border-color: white;
+    margin-left: 1300px;
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.search-container:hover > .search-input{
+  width: 300px;
+  border-bottom: solid 1px #0098D9;
+  margin-left:-300px;
+}
+
+.search-container .search-input{
+  background: transparent;
+  border: none;
+  outline:none;
+  width: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.8s;
+}
+
+.search-container .search-btn .fas{
+  color: white;
+}
+
+nav {
+  max-width: 1920px;
+  height: 50px;
+  padding-bottom:51px;
+  padding-right: 100px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  color: white;
+  margin: 0 0.2rem;
+  padding: 0.5rem;
+  display: block;
+  font-size: 20px;
+}
+
+nav > ul > li a:visited {
+  color: white;
+  margin: 0 0.2rem;
+  padding: 1rem;
+  display: block;
+  font-family: 'NTR';
+  font-size: 20px;
+}
+
+.important a:visited {
+  color: black;
+}
+
+nav > ul > li:hover, nav > ul > li:hover a {
+    background-color: #0098D9;
+    color: #121212;
+    cursor: pointer;
+}
+
+li > a {
+  color:white;
+  text-decoration: none;
+}
+
+.important {
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  background-color: #0098D9;
+  font-size: 20px;
+  width:100px;
+  display: block;
+  list-style-type: none;
+  font-family: 'NTR';
+  float:right;
+  color: black;
+}
+
+nav > ul > .important a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > ul > .important:hover {
+  background: linear-gradient(to right, #0098d9 0%, #000066 100%);
+  color: black;
+}
+

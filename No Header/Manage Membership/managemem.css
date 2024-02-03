@@ -1,0 +1,73 @@
+body {
+  background: black url("../../Images/Background/manage member.png") no-repeat fixed center;
+}
+
+* {
+  text-decoration: none;
+}
+
+img {
+    transform: translate(760px,750px);
+    height: 20%; 
+    width: 20%;
+}
+
+.square {
+    margin-top: 200px;
+    margin-left: 525px;
+    border-radius: 25px;
+    background-color: rgba(21, 21, 21, 0.75);
+    width: 830px;
+    height: 250px;
+    text-align: center;
+    
+}
+
+
+
+#inclu:link, #inclu:visited {
+  margin-top: 10px;
+  background-color: #0098D9;
+  border-radius: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 300px;
+  height: 60px;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+#inclu:hover {
+  background-color: #28A4D9;
+}
+
+.p3 {
+  color: white;
+  font-family: Play;
+  padding-top: 15px;
+}
+
+.p2 {
+
+  text-align: center;
+  font-family: Play;
+  font-size: 20px;
+
+}
+
+.p1 {
+
+  padding-top: 20px;
+  font-family: Play;
+  color: white;
+  font-size: 40px;
+
+}
+
+#exclu {
+  text-decoration: none;
+  color: white;
+}
+

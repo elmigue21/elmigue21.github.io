@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Membership" />
+    <title>Payment Method</title>
+    <link rel="stylesheet" href="NoHeadersss.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../Fabicon/apple-touch-icon.png">
+    <link rel="icon" type="soundfx/png" sizes="32x32" href="../../Fabicon/favicon-32x32.png">
+    <link rel="manifest" href="../../Fabicon/site.webmanifest">
+    <link rel="mask-icon" href="../../Fabicon/safari-pinned-tab.svg" color="#4a4a4a">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#151515">
+    <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
+</head>
+      <body>
+        <main>
+            <a href="../../Header 1/HomePage/HomePageUnaccessed.html"><img id="logo" src="../../Images/LOGO used/LIKAGI-FULL-LOGO.png"></a>
+            <form action="../../Header 1/Home/HomeUnaccessed.html">
+                <h1>Payment Method</h1>
+                <div class="container">
+                <ul class="payment">
+                    <li><a href="PaymentMethodPaypalUnaccessed.html" id="paypal"></a></li>
+                    <li><a href="PaymentMethodMastercardUnaccessed.html" id="mastercard"></a></li>
+                    <li><a href="PaymentMethodVisaUnaccessed.html" id="visa"></a></li>
+                    <li class="active"><a href="PaymentMethodGcashUnaccessed.html" id="gcash"></a></li>
+                </ul>
+                </div>
+                <fieldset>
+                    <label id="card-label" for="card">Card Number<input id="card" type="number" name="card" placeholder="Card Number" autocomplete="off" required/></label>
+                    <label id="first-label" for="first">First Name</label>
+                    <label id="last-label" for="last">Last Name</label>
+                    <input id="first" type="text" name="first" placeholder="First Name" autocomplete="off" required/>
+                    <input id="last" type="text" name="last" placeholder="Last Name" autocomplete="off" required/>
+                    <label id="address-label" for="address">Bill Address<input id="address" type="text" name="address" placeholder="Bill Address" autocomplete="off" required/></label>
+                    <label id="date-label" for="date">Exp. Date</label>
+                    <label id="code-label" for="code">Postal Code</label>
+                    <input id="date" type="date" name="date" placeholder="Exp. Date" autocomplete="off" required/>
+                    <input id="code" type="number" name="code" placeholder="Postal Code" autocomplete="off" required/>
+                    <label id="country-label" for="country">Country</label>
+                    <label id="phone-label" for="phone">Phone Number</label>
+                    <input id="country" type="text" name="country" placeholder="Country" autocomplete="off" required/>
+                    <input id="phone" type="number" name="phone" placeholder="Phone Number" autocomplete="off" required/>
+                </fieldset>
+                <button class="next">Next</button>
+                <div class="cancel">
+                <a href="../../Header 1/Home/HomeUnaccessed.html" style="font-size: 18px;">Cancel</a>
+                </div>
+            </form>
+            
+        </main>
+    </body>
+</html>

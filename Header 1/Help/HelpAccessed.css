@@ -1,0 +1,625 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  
+  }
+
+  *{
+    text-decoration: none;
+  }
+  
+li b {
+    color: white;
+}
+
+#logo {
+    width: 220px;
+    height: 50px;
+    padding: 0.4rem;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    /*margin-left: 100px;*/
+    /*margin-top:20px;*/
+}
+
+  
+  body {
+    background: #202020;
+    color: white;
+    font-family: 'NTR';
+    margin: 0;
+    width: 100%;
+    min-height: 1800px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y:scroll;
+  
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+  } 
+  
+  header {
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #151515;
+    display: flex;
+    position: fixed;
+    font-family: 'NTR';
+    top: 0;
+    z-index: 1;
+  }
+  
+  input {
+    color: white;
+  }
+
+.search-container {
+    background: #151515;
+    height: 30px;
+    border-radius: 30px;
+    border-color: white;
+    margin-left: 1360px;
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
+    transition: 0.8s;
+}
+  
+  .search-container:hover > .search-input{
+    width: 300px;
+    border-bottom: solid 1px #0098D9;
+    margin-left:-300px;
+  }
+  
+  .search-container .search-input{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+  }
+  
+  .search-container .search-btn .fas{
+    color: white;
+  }
+  
+  nav {
+    max-width: 1920px;
+    height: 50px;
+    padding-bottom:43.5px;
+    padding-right: 100px;
+  }
+  
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    height: 100%;
+  }
+  
+  nav > ul > li {
+    color: white;
+    margin: 0 0.2rem;
+    padding: 0.5rem;
+    display: block;
+    font-size: 20px;
+  }
+  
+  nav > ul > li a:visited, .important a:visited {
+    color: white;
+    margin: 0 0.2rem;
+    padding: 1rem;
+    display: block;
+    font-family: 'NTR';
+    font-size: 20px;
+  }
+  
+  nav > ul > li:hover, nav > ul > .important:hover, nav > ul > li:hover a {
+      background-color: #0098D9;
+      color: #121212;
+      cursor: pointer;
+  }
+  
+  li > a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .important {
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 0.58rem 1rem;
+    display: block;
+    list-style-type: none;
+    font-family: 'NTR';
+    float:right;
+  }
+  
+  .important-content {
+    display: none;
+    position: absolute;
+    background-color: #292929;
+    border-radius: 20px;
+    margin-top: 10px;
+    color: white;
+    font-size:20px;
+    width: 300px;
+    z-index: 1;
+    right:100px;
+  }
+  
+  .important-content a {
+    color: white;
+    padding: 1px 16px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    transition: all .5s ease;
+  }
+  
+  .important:hover .important-content {
+    display: block;
+    color:black;
+    
+  }
+  
+  .important-content a:hover {
+    background-color: #0098D9;
+    color:black;
+    transition: all .5s ease;
+  }
+  
+  .sidebar{
+    position: fixed;
+    width: 240px;
+    left: -240px;
+    top: 60px;
+    height: 100%;
+    background-color: #2d2d2d;
+    transition: all .5s ease;
+    z-index: 1;
+  }
+  
+  .sidebarprofile {
+    margin: auto auto;
+    text-align: center;
+  }
+  
+  .sidenavmenu {
+    margin-top:10px;
+  }
+  
+  .sidenavmenu a{
+    display: block;
+    height: 65px;
+    width: 100%;
+    color: white;
+    line-height: 65px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'NTR';
+    text-decoration: none;
+    transition: all .5s ease;
+  }
+  
+  .sidenavmenu a:hover{
+    color: black;
+    background: #0098D9;
+  }
+  
+  a.active {
+    color:black;
+    background: linear-gradient(to right, #0098d9 0%, #000066 100%);
+    transition: all .5s ease;
+  }
+  
+  a.active:hover {
+    background:#0098D9;
+    transition: all .5s ease;
+  }
+  
+  .sidebar a span{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  #check{
+    display: none;
+  }
+  label #btn,label #cancel{
+    position: fixed;
+    z-index: 2;
+    left: -10px;
+    top: -7px;
+    cursor: pointer;
+    color: black;
+    border-radius: 5px;
+    margin: 15px 30px;
+    font-size: 29px;
+    background-color: #0098D9;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+  }
+  label #cancel{
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ label #cancel{
+    opacity: 1;
+    visibility: visible;
+  }
+  @media(max-width : 860px){
+    .sidebar{
+      height: auto;
+      width: 70px;
+      left: 0;
+      margin: 100px 0;
+    }
+    header,#btn,#cancel{
+      display: none;
+    }
+    span{
+      position: absolute;
+      margin-left: 23px;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .sidebar a{
+      height: 60px;
+    }
+    .sidebar a i{
+      margin-left: -10px;
+    }
+    a:hover {
+      width: 200px;
+      background: inherit;
+    }
+    .sidebar a:hover span{
+      opacity: 1;
+      visibility: visible;
+    }
+
+  }
+a {
+    color: white;
+}
+
+.fa-brands {
+    color: white;
+}
+
+.socialOverlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top:0;
+}
+
+  .socialOverlay:target {
+      display: flex;
+  }
+#socialOverlay1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 30px;
+}
+
+.close-btn{
+  float:right;
+  font-size:30px;
+  margin-right:20px;
+  margin-top:10px;
+}
+.close-btn a{
+  color:white;
+}
+.socialTabs {
+  width: 95%;
+  height: 70px;
+  background-color: gray;
+  font-size: 30px;
+  border-radius: 18px;
+  line-height: 70px;
+  margin: auto;
+  margin-top: 10px;
+}
+  .socialTabs img {
+      border-radius: 300px;
+      width: 40px;
+      height: 40px;
+      margin-left: 10px;
+      vertical-align: middle;
+  }
+  .socialTabs .name{
+      margin-left:10px;
+  }
+  .socialTabs .visit {
+      float: right;
+      margin-right: 20px;
+      font-size: 12px;
+  }
+
+
+.containerSocial {
+  z-index: 2;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content:center;
+  border-radius: 30px;
+  width: 1000px;
+  height:600px;
+  background-color:#151515;
+  margin:auto;
+}
+h4{
+  font-size:30px;
+  margin-top:15px;
+  margin-left:15px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 65%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 500px;
+  background: #151515;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items at the start of the flex container */
+  border-radius:8px;
+  z-index: 2;
+}
+
+
+/* Styles for the content within the overlays */
+.overlay-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%; /* Adjust the width as needed */
+}
+
+/* Styles for the close button */
+.containerSocial close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.socialHeader{
+  width:100%;
+  height:50px;
+  top:0;
+}
+
+.socialTabsContainer{
+  overflow-y:auto;
+  top:0;
+  width:100%;
+  height:500px;
+}
+
+/* Show the overlay when its corresponding anchor is targeted */
+.overlay:target {
+  display: flex;
+}
+
+.msgbox:active {
+  background-color: white; /* Change color as needed */
+}
+
+.msgbox {
+  width: auto;
+  height: auto;
+  background-color: #202020;
+  border-top: 3px solid #151515;
+  border-bottom: 3px solid #151515;
+  /*border:1px solid white;*/
+  border-radius: 10px;
+}
+
+  .container p {
+      margin-top: 5px;
+      color: white;
+      font-size: 30px;
+      position: absolute;
+
+  }
+
+.friend {
+  background-color: gray;
+  width: 30%;
+  height: auto;
+  left: 0;
+  border-radius: 10px;
+  border-bottom-left-radius: 1px;
+  padding:3%;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-left:8px;
+}
+
+.user {
+  background-color: #0098D9;
+  width: 30%;
+  height: auto;
+  right:0;
+  border-radius:10px;
+  border-bottom-right-radius: 1px;
+  padding:3%;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-left:auto;
+  margin-right:8px;
+}
+
+.fa-circle-plus,
+.fa-images,
+.fa-face-smile,
+.fa-paperclip,
+.fa-microphone,
+.fa-paper-plane {
+  color: #0098D9;
+  font-size: 30px;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.fa-circle-plus,
+.fa-images,
+.fa-face-smile,
+.fa-paperclip,
+.fa-microphone {
+  position: relative;
+}
+
+.fa-circle-plus {
+  margin-left: 15px;
+}
+
+.fa-paper-plane {
+  right:10px;
+  position:absolute;
+}
+
+  .fa-circle-plus:hover,
+  .fa-images:hover,
+  .fa-face-smile:hover,
+  .fa-paperclip:hover,
+  .fa-microphone:hover,
+  .fa-paper-plane:hover {
+      color: white; /* Change to your desired hover color */
+  }
+.chatHeader {
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  position: fixed;
+  top: 0;
+  background-color: #0098D9;
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+  line-height:55px;
+}
+
+.chatBox {
+  width:100%;
+  height:100%;
+  overflow-y:auto;
+  border-radius:8px;
+  padding-bottom:80px;
+}
+.chatFooter {
+  width: 100%;
+  height: 50px;
+  background-color: #202020;
+  bottom: 0px;
+  position: absolute;
+  color: white;
+  display: flex;
+}
+
+.chatHeader span {
+  right: 0;
+  position: absolute;
+  margin-right: 12px;
+  font-size: 50px;
+  color: white;
+}
+
+.messageOverlay{
+  height:100%;
+  width:250px;
+  position:fixed;
+  left:0px;
+  background-color:gray;
+  top:60px;
+  z-index:2;
+  display:none;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+.messageOverlay:target{
+  display:flex;
+}
+
+  .messagesTabTop a {
+      color: black;
+      font-size: 50px;
+      right: 5px;
+      position: absolute;
+      text-decoration: none;
+      background-color: #0098D9;
+      margin-top: 10px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      line-height: 200px;
+  }
+
+.chatProfileContainer{
+  width:100%;
+  height:100%;
+  z-index:2;
+  overflow-y:auto;
+  
+}
+.chatProfile {
+  width: 95%;
+  height: 100px;
+  background-color: #151515;
+  border-radius:18px;
+  margin:auto;
+  margin-top:10px;
+  font-size:30px;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.chatProfileContainer a {
+ text-decoration:none;
+ color:white;
+}

@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccountSettingsUnaccessed</title>
+    <link rel="stylesheet" href="HeaderCommunity.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=NTR&family=Play&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../Fabicon/apple-touch-icon.png">
+        <link rel="icon" type="soundfx/png" sizes="32x32" href="../../Fabicon/favicon-32x32.png">
+        <link rel="manifest" href="../../Fabicon/site.webmanifest">
+        <link rel="mask-icon" href="../../Fabicon/safari-pinned-tab.svg" color="#4a4a4a">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#151515">
+    <style>
+        .contentContainer {
+            display: flex;
+            margin-top: 60px;
+            width: 100%;
+            height: 100vh; /* 100% of the viewport height */
+            overflow: hidden;
+        }
+                
+        .box-left {
+            width: 10%;
+            background-color: #151515;
+            height: 100vh; /* 100% of the viewport height */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box-right {
+            width: 90%;
+            height: 100vh; /* 100% of the viewport height */
+            display: none;
+            flex-direction: column;
+        }
+
+            .box-right:target {
+                display: flex;
+            }
+
+        .boxnav {
+            width: 100%;
+            height: 60px;
+            background-color: #0098D9;
+            border-top: 0.5px solid black;
+            border-bottom: 0.5px solid black;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .boxnav:hover {
+                background-color: #28A4D9;
+;
+            }
+
+        .division {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            border-bottom: 5px solid #151515;
+        }
+
+        .overlayContent {
+            margin-left: 50px;
+            width: 500px;
+            height: auto;
+            border-bottom: 1px solid #D3D3D3;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            position: relative;
+        }
+
+            .overlayContent img {
+                width: 50px;
+                height: 50px;
+                border-radius: 200px;
+            }
+
+        .button {
+            background-color: white;
+            width: auto;
+            height: 15px;
+            position: relative;
+            margin: 10px;
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 5px;
+            color: black;
+            line-height: 20px;
+            cursor:pointer;
+        }
+        
+        .button:hover {
+            background-color: #0098D9;
+        }
+
+        .buttonContainer {
+            width: auto;
+            height: auto;
+            position: absolute;
+            right: 0px;
+            display: flex;
+        }
+
+        .dropdown {
+            border: 1px solid white;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+            .dropdown b {
+                cursor: pointer;
+            }
+
+        .overlayContent b {
+            font-size: 25px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../Home/HomeUnaccessed.html"><img id="logo" src="../../Images/LOGO used/LIKAGI-FULL-LOGO.png"></a>
+        <div class="search-container">
+            <input type="text" name="search" placeholder="Search..." class="search-input">
+            <a href="#" class="search-btn">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Home/HomeUnaccessed.html"><b style="color:white;">Home</b></a></li>
+                <p style="color: white; padding-top: 3px;">|</p>
+                <li><a href="../Community/CommunityForYouUnaccessed.html"><b style="color:white;">Community</b></a></li>
+                <p style="color: white; padding-top: 3px;">|</p>
+                <li><a href="../Help/HelpUnaccessed.html"><b style="color:white;">Help</b></a></li>
+                <li><i class="fas fa-bell" style="color: white;margin-top:10px;"></i></li>
+                <img id="profilepic" src="../../Images/Profile/Faker Profile.jpg" height="40px" width="40px" style="border: 1px solid #0098D9;border-radius: 100px; margin:0 10px 0 2px;float:left;">
+                <div class="important">
+                    <span><b style="font-size: 20px;margin-left:-15px;margin-right: -5px;">&nbsp;&nbsp;Faker</b></span>
+                    <div class="important-content">
+                        <a href="../Profile/ProfileUnaccessed.html"><b style="font-size: 25px;">Profile</b></a>
+                        <p style="color: white; margin-left: 15px; margin-top: -8px;font-family: sans-serif;">________________________</p>
+                        <a href="#">Account Settings</a>
+                        <a href="#">Manage Accounts</a>
+                        <a href="../../Header 2/PrivacyPolicyUnaccessed.html">Privacy Policy</a>
+                        <a href="../HomePage/HomePageUnaccessed.html">Log out</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contentContainer">
+        <div class="box-left">
+            <div class="division">
+                <a href="#overlay1"><div class="boxnav">Your Account</div></a>
+                <a href="#overlay2"><div class="boxnav">Login & Security</div></a>
+                <a href="#overlay3"><div class="boxnav">Preferences</div></a>
+                <a href="#overlay4"><div class="boxnav">Privacy Settings</div></a>
+            </div>
+            <div class="division">
+                <a href="#overlay5"><div class="boxnav">Check Plan</div></a>
+                <a href="#overlay6"><div class="boxnav">Purchase History</div></a>
+            </div>
+            <div class="division">
+                <a href="#overlay7"><div class="boxnav">Profile and Tagging</div></a>
+                <a href="#overlay8"><div class="boxnav">Blocking</div></a>
+                <a href="#overlay9"><div class="boxnav">Notifications</div></a>
+            </div>
+        </div>
+        <div class="box-right" id="overlay1">
+            <h1 style="margin-left:50px; margin-bottom:15px;font-family: 'Play', sans-serif;"> Your Account</h1>
+            <div class="overlayContent"><img src="https://norrismgmt.com/wp-content/uploads/2020/05/24-248253_user-profile-default-image-png-clipart-png-download.png" /><div class="buttonContainer"><div class="button">Remove Photo</div><div class="button">Change Photo</div></div></div>
+            <div class="overlayContent"> <span><b>Name</b> <br /> John Ulric Bon</span><div class="buttonContainer"><div class="button">Edit</div></div></div>
+            <div class="overlayContent"> <span><b>Email Adress</b> <br /> johnulricbon@gmail.com</span><div class="buttonContainer"><div class="button">Edit</div></div></div>
+            <div class="overlayContent" style="border:0px; margin-bottom:-20px;"> <span><b style="font-size:20px;">Connected Accounts</b> </span></div>
+            <div class="overlayContent" style="border:0px;"> <span>Google</span><div class="buttonContainer"><div class="button">Disconnect</div></div></div>
+            <div class="overlayContent" style="border:0px;"> <span>Microsoft</span><div class="buttonContainer"><div class="button">Disconnect</div></div></div>
+            <div class="overlayContent"> <span>Facebook</span><div class="buttonContainer"><div class="button">Disconnect</div></div></div>
+            <div class="overlayContent"> <span><b>What are you using LIKAGI for?</b> <br /> <span class="dropdown">Personal  &nbsp;&nbsp; <b style="color:gray;">v</b></span></span></div>
+            <div class="overlayContent"> <span><b>Language</b> <br /> <span class="dropdown">English (Philippines)  &nbsp;&nbsp; <b style="color:gray;">v</b></span></span></div>
+        </div>
+        <div class="box-right" id="overlay2">
+            <h1 style="margin-left:50px; margin-bottom:15px;font-family: 'Play', sans-serif;"> Login & Security</h1>
+            <div class="overlayContent"> <span><b>Password</b> <br /> *********************</span><div class="buttonContainer"><div class="button">Change Password</div></div></div>
+            <div class="overlayContent" style="border:0px;"> <span><b style="font-size:20px;">Connected Accounts</b> </span><div class="buttonContainer"><div class="button">Sign out of all devices</div></div></div>
+            <div class="overlayContent" style="border:0px;"> <span>Iphone 14</span><div class="buttonContainer"><div class="button">Disconnect</div></div></div>
+            <div class="overlayContent" style="border:0px;"> <span>Windows 11</span><div class="buttonContainer"><div class="button">Disconnect</div></div></div>
+            <div class="overlayContent"> <span>Samsung Galaxy</span><div class="buttonContainer"><div class="button">Disconnect</div></div></div>
+            <div class="overlayContent"> <span><b>Your Data</b> <br /> You can request a copy of your <br />information at any time.</span><div class="buttonContainer"><div class="button">Download your data</div></div></div>
+            <div class="overlayContent"> <span><b>Delete Account</b> <br /> Account will be permanently deleted<br />after 30 Days!</span><div class="buttonContainer"><div class="button">Delete Account</div></div></div>
+        </div>
+        <div class="box-right" id="overlay3">
+            <h1 style="margin-left:50px; margin-bottom:15px;font-family: 'Play', sans-serif;"> Preferences</h1>
+            <div class="overlayContent"> <span><b>Theme</b> <br /> <span class="dropdown">Dark  &nbsp;&nbsp; <b style="color:gray;">v</b></span></span></div>
+            <div class="overlayContent"> <span><b>Text Size</b> <br /> <span class="dropdown">Large  &nbsp;&nbsp; <b style="color:gray;">v</b></span></span></div>
+            <div class="overlayContent"> <span><b>High Color Contrast</b> <br /> </span><div class="buttonContainer"><div class="button">On</div></div></div>
+
+            <div></div>
+        </div>
+        <div class="box-right" id="overlay4">
+            <h1 style="margin-left:50px; margin-bottom:15px;font-family: 'Play', sans-serif;"> Privacy Settings</h1>
+            <div class="overlayContent"> <span><b>Who can see my posts?</b> <br /> <span class="dropdown">Only Me  &nbsp;&nbsp; <b style="color:gray;">v</b></span></span></div>
+            <div class="overlayContent"> <span><b>Who can follow you?</b> <br /> <span class="dropdown">Friends of Friends  &nbsp;&nbsp; <b style="color:gray;">v</b></span></span></div>
+            <div class="overlayContent"> <span><b>Who can see your following list?</b> <br /> <span class="dropdown">Only Me  &nbsp;&nbsp; <b style="color:gray;">v</b></span></span></div>
+        </div>
+        <div class="box-right" id="overlay5">
+            <h1 style="margin-left:50px; margin-bottom:15px;font-family: 'Play', sans-serif;"> Check Plan</h1>
+            <div class="overlayContent" style="border:0px; margin-bottom:-50px;"> <span><b>Current Subscription Plan</b></span></div>
+            <div class="overlayContent"> <span><b>Delete Account</b> <br /> Your plan will be updated after your current plan ends</span><div class="buttonContainer"><div class="button">Change Plan</div></div></div>
+        </div>
+        <div class="box-right" id="overlay6">
+            <h1 style="margin-left:50px; margin-bottom:15px;font-family: 'Play', sans-serif;"> Purchase History</h1>
+            <div class="overlayContent"> <span><b style="font-size:20px;">Recent Purchases</b> </span></div>
+            <div class="overlayContent" style="border:0px;"> <span><b style="line-height:20px">1 Year</b><br />12/4/2023</span><div class="buttonContainer"><div class="button">View Details</div></div></div>
+            <div class="overlayContent" style="border:0px;"> <span><b style="line-height:20px">6 Months</b><br />6/2/2023</span><div class="buttonContainer"><div class="button">View Details</div></div></div>
+            <div class="overlayContent"> <span><b style="line-height:20px">1 Month</b><br />4/29/2023</span><div class="buttonContainer"><div class="button">View Details</div></div></div>
+        </div>
+        <div class="box-right" id="overlay7">
+            <h1 style="margin-left:50px; margin-bottom:15px;font-family: 'Play', sans-serif;"> Profile and Tagging</h1>
+            <div class="overlayContent"> <span><b>Who can tag me in posts?</b> <br /> <span class="dropdown">Friends  &nbsp;&nbsp; <b style="color:gray; font-size:20px;">v</b></span></span></div>
+            <div class="overlayContent"> <span><b>Who can mention me in comments?</b> <br /> <span class="dropdown">Friends &nbsp;&nbsp; <b style="color:gray; font-size:20px;">v</b></span></span></div>
+            <div class="overlayContent"> <span><b>Tagged posts that show up on your profile</b> <br /> <span class="dropdown">None  &nbsp;&nbsp; <b style="color:gray; font-size:20px;">v</b></span></span></div>
+        </div>
+        <div class="box-right" id="overlay8">
+            <h1 style="margin-left:50px; margin-bottom:15px;font-family: 'Play', sans-serif;"> Blocking</h1>
+            <div class="overlayContent" style="border:0px;"> <span><b style="font-size:20px;">Blocked Accounts</b> </span></div>
+            <div class="overlayContent" style="border:0px;"> <span>BlockedUser1</span><div class="buttonContainer"><div class="button">Unblock</div></div></div>
+            <div class="overlayContent" style="border:0px;"> <span>BlockedUser2</span><div class="buttonContainer"><div class="button">Unblock</div></div></div>
+            <div class="overlayContent"> <span>BlockedUser3</span><div class="buttonContainer"><div class="button">Unblock</div></div></div>
+        </div>
+        <div class="box-right" id="overlay9">
+            <h1 style="margin-left:50px; margin-bottom:15px;font-family: 'Play', sans-serif;"> Notifications</h1>
+            <div class="overlayContent"> <span><b>Popup Notifications</b> <br /> <span class="dropdown">Off  &nbsp;&nbsp; <b style="color:gray;">v</b></span></span></div>
+            <div class="overlayContent"> <span><b>Messages</b> <br /> <span class="dropdown">On &nbsp;&nbsp; <b style="color:gray;">v</b></span></span></div>
+            <div class="overlayContent"> <span><b>Posts Interaction</b> <br /> <span class="dropdown">Off &nbsp;&nbsp; <b style="color:gray;">v</b></span></span></div>
+        </div>
+    </div>
+
+
+</body>
+</html>

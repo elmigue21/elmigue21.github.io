@@ -1,0 +1,146 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  
+  }  
+
+  * {
+    text-decoration: none;
+  }
+  
+  body {
+    background: #202020;
+    background-image: url(../../Images/Background/Signup\ BG.png);
+    color: white;
+    width: 1920px;
+    margin: 0;
+    font-family: 'NTR';
+  }
+
+  main {
+    height: 100%;
+    margin-right: 1000px;
+    width:600px;
+    margin:0;
+    background: #151515;
+    align-items: center;
+  }
+
+  #logo {
+    width: 220px;
+    height: 50px;
+    padding: 0.4rem;
+    margin-top:10px;
+  }
+
+  form {
+    width: 400px;
+    margin: 0 auto;
+    padding-bottom: 0.5em;
+    padding-top: 3em;
+  }
+
+  fieldset {
+    border: none;
+    margin-top: -30px;
+    padding: 3rem 0;
+  }
+
+  #email-label, #password-label, #username-label, #repassword-label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  #email, #password, #username, #repassword {
+    border:none;
+    background: #151515;
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    border-bottom: 1.5px solid white;
+    transition: .2s;
+  }
+
+  #email:active,
+  #email:focus,
+  #email:hover,
+  #username:active,
+  #username:focus,
+  #username:hover,
+  #repassword:active,
+  #repassword:focus,
+  #repassword:hover,
+  #password:active,
+  #password:focus,
+  #password:hover {
+	outline: none;
+	border-color:#0098D9;
+    transition: .2s;
+  }
+
+  ::placeholder {
+    color:grey;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .rm {
+    float:left;
+  }
+
+  .signup {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .signup a {
+    color: white;
+  }
+
+  .login {
+    margin-bottom: -20px;
+    margin-left: 74px;
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: #0098D9;
+    color:#151515;
+    border:none;
+  }
+
+  .login:hover {
+    background:linear-gradient(to right, #0098d9 0%, #000066 100%);
+    cursor: pointer;
+    transition: all .5s ease;
+  }
+  
+  .gf {
+    text-align: center;
+    margin-bottom: 200px;
+  }
+  
+  .button {
+    margin: 10px auto;
+    align-items: center;
+    height: 60px;
+    width: 400px;
+    display: flex;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-left: 103px;
+  }
+
+  .button:hover {
+    cursor:pointer;
+  }
+
+  .button img, .button p {
+    margin-left: 50px;
+  }

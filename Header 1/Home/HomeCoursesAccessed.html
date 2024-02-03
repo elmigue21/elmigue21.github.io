@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var scrollWrappers = document.getElementsByClassName('horizontal_slide');
+            var scrollLeftButtons = document.getElementsByClassName('scrollLeft');
+            var scrollRightButtons = document.getElementsByClassName('scrollRight');
+
+            for (var i = 0; i < scrollLeftButtons.length; i++) {
+                var scrollLeftButton = scrollLeftButtons[i];
+                var scrollRightButton = scrollRightButtons[i];
+                var scrollWrapper = scrollWrappers[i];
+
+                scrollLeftButton.addEventListener('click', (function (wrapper) {
+                    return function () {
+                        wrapper.scrollLeft -= 450; // You can adjust the scroll distance
+                    };
+                })(scrollWrapper));
+
+                scrollRightButton.addEventListener('click', (function (wrapper) {
+                    return function () {
+                        wrapper.scrollLeft += 450; // You can adjust the scroll distance
+                    };
+                })(scrollWrapper));
+            }
+        });
+
+    </script>
+    <style>
+        .imageOverlayTrigger {
+            position: relative;
+            display: inline-block;
+        }
+
+            .imageOverlayTrigger i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #ffd500;
+                font-size:80px;
+            }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1; /* Ensure the overlay is on top */
+        }
+
+        .overlay-content {
+            text-align: center;
+            color: white;
+            background: rgba(0, 0, 0, 1);
+            width: 600px;
+            height: 800px;
+            align-content: center;
+        }
+
+
+        h2, h3 {
+            font-size: 30px;
+        }
+
+        .ads_wrapper {
+            position: relative;
+            width: 1600px;
+            z-index: 1;
+        }
+
+        .horizontal_slide {
+            width: 1450px;
+            margin: 0 auto;
+            overflow: hidden;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+        }
+
+
+        /*===== MULTIPLE soundfx DISPLAY====*/
+
+        .slide_content {
+            background-color: #000;
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+            height: 200px;
+            width: 350px;
+        }
+
+            .slide_content img {
+                height: 200px;
+                width: 350px;
+                display: block;
+            }
+
+        .img_descr {
+            color: #f2f2f2;
+            background: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            font-size: 18px;
+            margin: 0px;
+            position: absolute;
+            text-align: center;
+            bottom: 1px;
+            overflow-wrap: break-word;
+            white-space: normal; /* Ensure white-space is set to normal */
+            max-width: 100%; /* Limit the width to 100% if needed */
+            pointer-events: none;
+        }
+
+        .action-btn {
+            font-size: 1px;
+            padding: 2px;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            margin: 0px;
+            border: 0px;
+            background-color: #000;
+        }
+
+            .action-btn a {
+                text-decoration: none;
+                font-size: 15px;
+                padding: 2px;
+                margin: 0px;
+                border-radius: none;
+                text-align: center;
+                color: white;
+            }
+
+                .action-btn a:hover {
+                    transform: none;
+                    background-color: #000;
+                }
+
+
+        /*===== SCROLL BUTTONS====*/
+
+        .scrollLeft, .scrollRight {
+            border: none;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 24px; /* Adjust the font size */
+            padding: 10px; /* Adjust the padding */
+        }
+
+            .scrollLeft:hover, .scrollRight:hover {
+                cursor: pointer;
+            }
+
+        .scrollLeft {
+            position: absolute;
+            top: 75px;
+            left: 20px;
+        }
+
+        .scrollRight {
+            position: absolute;
+            top: 75px;
+            right: 20px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Membership" />
+    <title>Your Courses</title>
+    <link rel="stylesheet" href="HomeAccessed.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../Fabicon/apple-touch-icon.png">
+    <link rel="icon" type="soundfx/png" sizes="32x32" href="../../Fabicon/favicon-32x32.png">
+    <link rel="manifest" href="../../Fabicon/site.webmanifest">
+    <link rel="mask-icon" href="../../Fabicon/safari-pinned-tab.svg" color="#4a4a4a">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#151515">
+</head>
+<body>
+    <!--This is the Accessed header-->
+    <header>
+        <a href="../Home/HomeAccessed.html"><img id="logo" src="../../Images/LOGO used/LIKAGI-FULL-LOGO.png"></a>
+        <div class="search-container">
+            <input type="text" name="search" placeholder="Search..." class="search-input">
+            <a href="#" class="search-btn">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Home/HomeAccessed.html"><b>Home</b></a></li>
+                <p style="color: white; padding-top: 3px;">|</p>
+                <li><a href="../Community/CommunityAccessed.html"><b>Community</b></a></li>
+                <p style="color: white; padding-top: 3px;">|</p>
+                <li><a href="../Help/HelpAccessed.html"><b>Help</b></a></li>
+                <li><i class="fas fa-bell" style="color: white;margin-top:10px;"></i></li>
+                <img id="profilepic" src="../../Images/Profile/Faker Profile.jpg" height="40px" width="40px" style="border: 1px solid #0098D9;border-radius: 100px; margin:0 10px 0 2px;float:left;">
+                <div class="important">
+                    <span><b style="font-size: 20px;margin-left:-15px;margin-right: -5px;">&nbsp;&nbsp;Faker</b></span>
+                    <div class="important-content">
+                        <a href="../Profile/ProfileAccessed.html"><b style="font-size: 25px;">Profile</b></a>
+                        <p style="color: white; margin-left: 15px; margin-top: -8px;font-family: sans-serif;">________________________</p>
+                        <a href="../Account Settings/AccountSettingsAccessed.html">Account Settings</a>
+                        <a href="#">Manage Accounts</a>
+                        <a href="../../Header 2/PrivacyPolicyAccessed.html">Privacy Policy</a>
+                        <a href="../HomePage/HomePageAccessed.html">Log out</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!--This is the side nav bar-->
+    <div class="sidebar">
+        <img id="profilepic" src="../../Images/Profile/Faker Profile.jpg" width="150px" height="150px" style="border: 2px solid #0098D9;border-radius: 100px; display: block;margin-left: 40px;margin-right: 40px; margin-top: 15px;">
+        <div class="sidebarprofile" style="text-align:center;">
+            <a href="../Profile/ProfileAccessed.html"><b style="font-size: 30px; color:white; margin-right:15px;">&nbsp;Faker</b></a>
+            <p style="font-size: 14px; margin-top: -15px; margin-bottom: -15px; margin-right: 10px;">100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.5k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;149</p>
+            <p style="font-size: 12px; margin-top: -15px;">Posts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Followers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Following</p>
+        </div>
+        <div class="sidenavmenu">
+            <a href="../../No Header/Manage Membership/managemembership.html" class="active">
+                <span><b>Likagi Member</b></span>
+            </a>
+            <a href="HomeAccessed.html">
+                <span>Home</span>
+            </a>
+            <a href="HomeProjectsAccessed.html">
+                <span>Your Projects</span>
+            </a>
+            <a href="HomeSharedAccessed.html">
+                <span>Shared With You</span>
+            </a>
+            <a href="HomeAssetsAccessed.html">
+                <span>Your Assets</span>
+            </a>
+            <a href="HomeCoursesAccessed.html">
+                <span>Courses Taking</span>
+            </a>
+        </div>
+    </div>
+
+    <div style="margin-top: -180px; margin-left: 250px;z-index: 0;">
+        <h2>Courses you're taking</h2>
+        <p> Game Development</p>
+        <div class="ads_wrapper">
+            <div class="horizontal_slide">
+
+                <div class="slide_content">
+                    <a href="https://www.youtube.com/watch?v=IlKaB1etrik">
+                        <img src="../../Images/Content/gamedev1.jpg" />
+                    </a>
+                    <div class="img_descr"> Brackeys - Basics</div>
+                </div>
+
+                <div class="slide_content">
+                    <a href="https://www.youtube.com/watch?v=9ZEu_I-ido4">
+                        <img src="../../Images/Content/gamedev2.jpg" />
+                    </a>
+                    <div class="img_descr"> Brackeys - Programming</div>
+                </div>
+
+                <div class="slide_content">
+                    <a href="https://www.youtube.com/watch?v=Au8oX5pu5u4">
+                        <img src="../../Images/Content/gamedev3.jpg" />
+                    </a>
+                    <div class="img_descr"> Brackeys - Movement</div>
+                </div>
+
+                <div class="slide_content">
+                    <a href="https://www.youtube.com/watch?v=HVB6UVcb3f8">
+                        <img src="../../Images/Content/gamedev4.jpg" />
+                    </a>
+                    <div class="img_descr"> Brackeys - Camera Follow</div>
+                </div>
+
+                <div class="slide_content">
+                    <a href="https://www.youtube.com/watch?v=gAB64vfbrhI">
+                        <img src="../../Images/Content/gamedev5.jpg" />
+                    </a>
+                    <div class="img_descr"> Brackeys - Collision</div>
+                </div>
+
+                <div class="slide_content">
+                    <a href="https://www.youtube.com/watch?v=D4I0I3QJAvc">
+                        <img src="../../Images/Content/gamedev6.jpg" />
+                    </a>
+                    <div class="img_descr"> Brackeys - Gameplay</div>
+                </div>
+
+
+
+
+                <button class="scrollLeft">&#10094;</button>
+                <button class="scrollRight">&#10095;</button>
+
+            </div>
+            <p>Animation</p>
+            <div class="ads_wrapper">
+
+                <div class="horizontal_slide">
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=0itiuHreY3A">
+                            <img src="../../Images/Content/animate1.jpg" />
+                        </a>
+                        <div class="img_descr"> Alex Grigg - Adobe Animate CC Crash Course</div>
+                    </div>
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=37L-8lbyS1Y">
+                            <img src="../../Images/Content/animate2.jpg" />
+                        </a>
+                        <div class="img_descr"> moderndayjames - How to start Animation</div>
+                    </div>
+
+
+                </div>
+                <button class="scrollLeft">&#10094;</button>
+                <button class="scrollRight">&#10095;</button>
+            </div>
+            <p>Programming</p>
+            <div class="ads_wrapper">
+
+                <div class="horizontal_slide">
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=zOjov-2OZ0E">
+                            <img src="../../Images/Content/programming1.jpg" />
+                        </a>
+                        <div class="img_descr"> freeCodeCamp - Intro to Programming and CS</div>
+                    </div>
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=VToVLx8BXyk">
+                            <img src="../../Images/Content/programming2.jpg" />
+                        </a>
+                        <div class="img_descr"> Tutorialspoint -  Data Types (C#)</div>
+                    </div>
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=gJhhWFtM21Q">
+                            <img src="../../Images/Content/programming3.jpg" />
+                        </a>
+                        <div class="img_descr"> Tutorialspoint - Switch Statement (C#)</div>
+                    </div>
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=-icJ_shKuNM">
+                            <img src="../../Images/Content/programming4.jpg" />
+                        </a>
+                        <div class="img_descr"> Tutorialspoint - If Else Statement (C#)</div>
+                    </div>
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=s6Yn7k3adAQ">
+                            <img src="../../Images/Content/programming5.jpg" />
+                        </a>
+                        <div class="img_descr"> Tutorialspoint - For Loop (C#)</div>
+                    </div>
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=daFdTssjm3w">
+                            <img src="../../Images/Content/programming6.jpg" />
+                        </a>
+                        <div class="img_descr"> Tutorialspoint - Arrays (C#)</div>
+                    </div>
+
+
+
+                </div>
+                <button class="scrollLeft">&#10094;</button>
+                <button class="scrollRight">&#10095;</button>
+            </div>
+            <p>Audio Engineering</p>
+            <div class="ads_wrapper">
+
+                <div class="horizontal_slide">
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=vLl34b9zIdk">
+                            <img src="../../Images/Content/audioeng1.jpg" />
+                        </a>
+                        <div class="img_descr"> Wayne.wav - Audio Engineering 101</div>
+                    </div>
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=QSvdhuu2orQ">
+                            <img src="../../Images/Content/audioeng2.jpg" />
+                        </a>
+                        <div class="img_descr"> Audio University - 4 Fundamentals of a Good Mix</div>
+                    </div>
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=wcUkF_if5_o">
+                            <img src="../../Images/Content/audioeng3.jpg" />
+                        </a>
+                        <div class="img_descr"> Audio University - How to use Equalizer</div>
+                    </div>
+
+
+
+                </div>
+                <button class="scrollLeft">&#10094;</button>
+                <button class="scrollRight">&#10095;</button>
+            </div>
+            <p>Gameplay Courses</p>
+            <div class="ads_wrapper">
+                <div class="horizontal_slide">
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=F6vWvlLT6PM">
+                            <img src="../../Images/Content/gameplay1.jpg" />
+                        </a>
+                        <div class="img_descr"> SkillCapped - Faker's Wave Control League of Legends</div>
+                    </div>
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=J9cjtK1pgT4">
+                            <img src="../../Images/Content/gameplay2.jpg" />
+                        </a>
+                        <div class="img_descr"> GameLeap - Invoker Guide Dota 2</div>
+                    </div>
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=l6Pi7zXAQos">
+                            <img src="../../Images/Content/gameplay3.jpg" />
+                        </a>
+                        <div class="img_descr"> Kazuki Official - Fanny Guide Mobile Legends</div>
+                    </div>
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=Re5j9PBjCxg">
+                            <img src="../../Images/Content/gameplay4.jpg" />
+                        </a>
+                        <div class="img_descr"> Sena - Jett Guide Valorant</div>
+                    </div>
+
+                    <div class="slide_content">
+                        <a href="https://www.youtube.com/watch?v=bjb79Was214">
+                            <img src="../../Images/Content/gameplay5.jpg" />
+                        </a>
+                        <div class="img_descr"> CaptainSparklez - How to kill Warden in Minecraft</div>
+                    </div>
+
+                </div>
+                <button class="scrollLeft">&#10094;</button>
+                <button class="scrollRight">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <div class="overlay-content">
+                <h2>Get access to more features by joining our subscription!</h2>
+                <img src="LIKAGI-SYMBOL-WHITE.png" />
+                <div style="font-size:24px;padding:10px;background: #0098D9; width: 300px; display: inline-block; border-radius:8px; cursor:pointer;" onclick="window.location='https://www.google.com/';">
+                    Go to Subscription
+                </div>
+                <p onclick="closeOverlay(); " style="cursor:pointer;"><span>No Thanks</span></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var imageOverlayTriggers = document.getElementsByClassName('imageOverlayTrigger');
+        var overlay = document.getElementById('overlay');
+
+        // Loop through each element with the class 'imageOverlayTrigger'
+        for (var i = 0; i < imageOverlayTriggers.length; i++) {
+            var currentTrigger = imageOverlayTriggers[i];
+
+            // Add click event listener to each element
+            currentTrigger.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent the default behavior of the link
+                overlay.style.display = 'flex';
+                // Add any other actions you want to perform on the overlay
+            });
+
+            // Create a new i element with Font Awesome classes
+            var crownIcon = document.createElement('i');
+            crownIcon.classList.add('fas', 'fa-crown');
+            crownIcon.style.color = '#ffd500';  // Set the color
+
+            // Append the icon to the currentTrigger element
+            currentTrigger.appendChild(crownIcon);
+        }
+
+        // Function to open the link
+        function openLink(url, event) {
+            event.stopPropagation(); // Stop the click event from reaching the underlying link
+            window.location = url;
+        }
+
+        function closeOverlay() {
+            overlay.style.display = 'none';
+        }
+    </script>
+
+
+
+
+</body>
+    <footer>
+      
+    </footer>
+</html>
